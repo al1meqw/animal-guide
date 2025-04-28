@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Короткий опис сайту.">
+  <meta name="keywords" content="тварини, довідник, зоологія">
+  <meta name="author" content="Османова Аліме">
+  <meta name="robots" content="index, follow">
+  <meta name="copyright" content="Османова Аліме">
+  <meta name="content-language" content="uk">
+  <meta name="expires" content="0">
+  <title>Групи тварин | Зоологічний довідник</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Групи тварин</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="groups.html">Групи тварин</a></li>
+      <li><a href="animal.html">Випадкова тварина</a></li>
+      <li><a href="feedback.html">Зворотній зв’язок</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Групи тварин категорії: <span id="catName">___</span></h2>
+      <ul>
+        <li><a href="animal.html">Хижаки</a></li>
+        <li><a href="animal.html">Травоїдні</a></li>
+        <li><a href="animal.html">Всеїдні</a></li>
+        <li><a href="animal.html">Рідкісні види</a></li>
+        <li><a href="animal.html">Домашні тварини</a></li>
+        <li><a href="animal.html">Нічні тварини</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Зоологічний довідник</p>
+  </footer>
+  
+
+  <script>
+    // Отримати параметр cat з URL
+    const params = new URLSearchParams(window.location.search);
+    const cat = params.get('cat');
+    if (cat) {
+      document.getElementById('catName').textContent = cat;
+    }
+  </script>
+
+</body>
+</html>

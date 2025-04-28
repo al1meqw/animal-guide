@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Короткий опис сайту.">
+  <meta name="keywords" content="тварини, довідник, зоологія">
+  <meta name="author" content="Османова Аліме">
+  <meta name="robots" content="index, follow">
+  <meta name="copyright" content="Османова Аліме">
+  <meta name="content-language" content="uk">
+  <meta name="expires" content="0">
+  <title>Зворотній зв’язок</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Форма зворотного зв’язку</h1>
+  </header>
+
+    <main>
+      <form action="#" method="post">
+        <label for="name">Ім’я:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+    
+        <label for="email">Електронна пошта:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+    
+        <label for="tel">Телефон:</label><br>
+        <input type="tel" id="tel" name="tel" pattern="\+380\d{9}" placeholder="+380XXXXXXXXX" required><br><br>
+    
+        <label for="url">Ваш сайт або сторінка:</label><br>
+        <input type="url" id="url" name="url"><br><br>
+    
+        <label for="date">Дата повідомлення:</label><br>
+        <input type="datetime-local" id="date" name="date"><br><br>
+    
+        <label for="message">Повідомлення:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40" maxlength="300" required></textarea><br><br>
+    
+        <button type="submit">Надіслати</button>
+      </form>
+    </main>
+    
+
+  <footer>
+    <p>© 2025 Зоологічний довідник</p>
+  </footer>
+
+</body>
+</html>
