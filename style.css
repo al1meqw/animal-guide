@@ -317,4 +317,40 @@ body {
   .animal-info a:hover {
     background-color: #004d40;
   }
-  
+  @media (max-width: 768px) {
+  .category-grid,
+  .group-grid,
+  .animal-cards {
+    grid-template-columns: 1fr; /* 1 блок в ряд */
+  }
+
+  header h1, h2, h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .category-card,
+  .group-btn,
+  .animal-card {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .animal-info a,
+  .group-btn,
+  .card-content a {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
