@@ -321,19 +321,27 @@ body {
   .category-grid,
   .group-grid,
   .animal-cards {
-    grid-template-columns: 1fr; /* 1 блок в ряд */
+    grid-template-columns: repeat(2, 1fr); /* 2 блоки в ряд */
+    justify-content: center;
+  }
+
+  .category-card,
+  .group-card,
+  .animal-card {
+    max-width: 320px;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .group-btn {
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto;
   }
 
   header h1, h2, h3 {
     font-size: 20px;
     text-align: center;
-  }
-
-  .category-card,
-  .group-btn,
-  .animal-card {
-    margin: 0 auto;
-    max-width: 90%;
   }
 
   nav ul {
