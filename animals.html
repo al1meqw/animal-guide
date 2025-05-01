@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Тварини групи</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header>
+  <h1>Тварини групи: <span id="groupTitle">___</span></h1>
+</header>
+<nav>
+    <ul>
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="animal.html">Випадкова тварина</a></li>
+      <li><a href="feedback.html">Зворотній зв’язок</a></li>
+      <li><a href="iframe.html">Фрейм</a></li>
+    </ul>
+  </nav>
+<main>
+  <div class="animal-cards">
+
+    <div class="animal-card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Eurasian_wolf_2.jpg/1920px-Eurasian_wolf_2.jpg" alt="Вовк" />
+      <div class="animal-info">
+        <h3>Вовк</h3>
+        <p>Сірий вовк — типовий хижак з родини псових.</p>
+        <a href="animal.html?animal=вовк">Докладніше</a>
+      </div>
+    </div>
+
+    
+
+  </div>
+</main>
+
+
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const group = params.get("group");
+  const title = document.getElementById("groupTitle");
+  if (group && title) {
+    title.textContent = group.charAt(0).toUpperCase() + group.slice(1);
+  }
+</script>
+<footer>
+    <p>© 2025 Зоологічний довідник | Зворотній зв’язок: <a href="mailto:alime.osmanova@nure.ua">zoo@site.com</a></p>
+  </footer>
+</body>
+</html>
